@@ -1,5 +1,3 @@
-window.alert('Minha primeira mensagem')
-window.confirm('Está gostando de Js?')
-let nome = window.prompt('Qual é o seu nome?')
-
-window.alert('Olá ' + nome)
+window.alert('Minha primeira mensagem') //Manda um alerta
+window.confirm('Está gostando de Js?')  //Manda uma tela de confirmação
+window.prompt('Qual é o seu nome?') //Manda um prompt para colocar o nome do usuário
