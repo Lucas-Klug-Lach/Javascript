@@ -7,21 +7,23 @@
 </head>
 <body>
     Digite sua Nacionalidade: <input type="text" name="txtnaci" id="txtnaci">
-    <input type="button" value="Enviar" onclick="enviar()">
+    <input type="button" value="Enviar" onclick=" nasc()">
     
     <div id="res">
 
     </div>
     
     <script>
-        function enviar(){
+        function nasc(){
             var país = document.getElementById('txtnaci')
             var res = document.getElementById('res')
             if (país = 'Brasil'){
-                res.innerHTML = `Você nasceu no ${país}, então você é Brasileiro`
+                res.innerHTML = `Você é Brasileiro`
             }else{
-                res.innerHTML = `Você nasceu no ${país}, então você é estrangeiro`
+                res.innerHTML += `Você é estrangeiro`
             }
+
+            res.innerText += `Você nasceu no(s) ${país}`
         }
     </script>
 </body>
