@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Passaporte</title>
+</head>
+<body>
+    Digite sua Nacionalidade: <input type="text" name="txtnaci" id="txtnaci">
+    <input type="button" value="Enviar" onclick="enviar()">
+    
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function enviar(){
+            var país = document.getElementById('txtnaci')
+            var res = document.getElementById('res')
+            if (país = 'Brasil'){
+                res.innerHTML = `Você nasceu no ${país}, então você é Brasileiro`
+            }else{
+                res.innerHTML = `Você nasceu no ${país}, então você é estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>
