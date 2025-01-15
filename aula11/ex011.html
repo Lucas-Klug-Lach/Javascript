@@ -15,15 +15,17 @@
     
     <script>
         function nasc(){
-            var país = document.getElementById('txtnaci')
+            var input = document.getElementById('txtnaci')
+            var pais = (input.value)
             var res = document.getElementById('res')
-            if (país = 'Brasil'){
+
+            if (pais == 'Brasil'){ //Condição composta
                 res.innerHTML = `Você é Brasileiro`
             }else{
                 res.innerHTML += `Você é estrangeiro`
             }
 
-            res.innerText += `Você nasceu no(s) ${país}`
+            res.innerHTML += `<br>Você nasceu no(a) ${pais}`
         }
     </script>
 </body>
